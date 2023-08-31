@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei da festa</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a href="#inicio" class="navbar-brand">
+                    <img src="./assets/img/logo.png" alt="Logo da página" width="54" height="54" class="d-inline-block me-3">
+                    Rei da festa
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#evento" title="botão evento mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="evento">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#eventos">Eventos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main data-bs-spy="scroll" data-bs-target="#header">
+        <section id="inicio">
+            <div id="carousel-festa" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/img/image-01.jpg" class="d-block w-100" alt="imagem de uma festa">
+                        <div class="carousel-caption">
+                            <h5 class="h1">Agende a diversão dos seus sonhos conosco!</h5>
+                            <p>Faça do seu evento um sucesso.</p>
+                        </div>
+                    </div> 
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/img/image-02.jpg" class="d-block w-100" alt="imagem de festa">
+                        <div class="carousel-caption">
+                            <h5 class="h1">Ambientes pensados para você e seus amigos</h5>
+                            <p>Agende. Celebre. Repita.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/img/image-03.jpg" class="d-block w-100" alt="imagem de festa">
+                        <div class="carousel-caption">
+                            <h5 class="h1">Transforme seus sonhos em eventos reais.</h5>
+                            <p>A festa perfeita ao seu alcance.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-festa" data-bs-slide="prev" title="botão para o item anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-festa" data-bs-slide="next" title="botão para o próximo item">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-festa" data-bs-slide-to="0" class="active" title="botão slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-festa" data-bs-slide-to="1" title="botão slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-festa" data-bs-slide-to="2" title="botão slide 3"></button>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5">
+            <div class="container mt-5 mb-5">
+                <h2 class="fw-bold mb-5 text-center">Agende seu evento</h2>
+                <ul class="nav nav-tabs" role="tablist">#TODO
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="neon-tab" data-bs-toggle="tab" data-bs-target="#neon-tab-pane" type="button" role="tab">Festa Neon</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fantasia-tab" data-bs-toggle="tab" data-bs-target="#fantasia-tab-pane" type="button" role="tab">Festa a fantasia</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content w-100">
+                    <div class="tab-pane fade show active" id="neon-tab-pane" role="tabpanel" aria-labelledby="neon-tab" tabindex="0">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                            <div class="col">
+                                <div class="card card-evento">
+                                    <img src="./assets/img/FestaNeon01.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">Festa neon 1</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-evento">
+                                    <img src="./assets/img/FestaNeon02.png" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">Festa neon 2</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-evento">
+                                    <img src="./assets/img/FestaNeon03.png" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">Festa neon 3</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="fantasia-tab-pane" role="tabpanel" tabindex="1">
+                        <div class="row row-cols-md-3 g-4 mt-3">
+                            <div class="col">
+                                <div class="card card-evento">
+                                    <img src="./assets/img/FestaFantasia01.png" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">Festa a fantasia 1</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-evento">
+                                    <img src="./assets/img/FestaFantasia02.png" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">Festa a fantasia 2</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-evento">
+                                    <img src="./assets/img/FestaFantasia03.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">Festa a fantasia 3</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center bg-dark p-5 mt-5 text-light">
+        <p>Desenvolvido por <strong class="text-primary">John Robert Conceição de Melo</strong></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</body>
+</html>
